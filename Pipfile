@@ -4,9 +4,7 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
-
 django = "<1.12,>=1.11"
 wagtail = "==2.0.1"
 "psycopg2-binary" = "*"
@@ -15,6 +13,9 @@ raven = "*"
 gunicorn = "*"
 django-storages = "*"
 "boto3" = "*"
+pytest = "*"
+pylint = "*"
+black = "*"
 
 [dev-packages]
 
@@ -23,3 +24,6 @@ django-storages = "*"
 [requires]
 
 python_version = "3.6"
+
+[scripts]
+test = "pytest"
